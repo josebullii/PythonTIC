@@ -1,6 +1,8 @@
-#Número mayor
+#Número mayor entre dos números
 
 #Inicio
+
+print("Número mayor")
 
 #Introducir números
 
@@ -13,3 +15,5 @@ if a>b:
     print("El mayor es: ", a)
 else:
     print("El mayor es: ", b)
+
+#Fin
