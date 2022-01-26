@@ -22,6 +22,9 @@ while bandera:
 #Números mayor o menor al introducido
 while num != n:
 
+    if num == 5:
+        print("Por el culo te la hinco, te falta calle")
+
     if num < n:
         print("El número introducido es menor")
         num = int(input("Introduzca otro número: "))
