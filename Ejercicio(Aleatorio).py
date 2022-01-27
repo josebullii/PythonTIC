@@ -19,7 +19,7 @@ while bandera:
         print("ES OBLIGATORIO ESCRIBIR UN NÚMERO")
         intentos = intentos + 1
 
-#Números mayor o menor al introducido
+#Número mayor o menor al introducido
 while num != n:
 
     if num == 5:
@@ -40,6 +40,3 @@ if n == num:
     print("Ha necesitado un total de", intentos, "intentos")
 
 #Fin del programa
-
-
-    
