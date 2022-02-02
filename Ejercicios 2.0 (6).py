@@ -1,4 +1,4 @@
-#Inicio: Imprimir y contar los múltiplos de 3 desde la unidad hasta un número que itroducimos por teclado
+#Inicio: Imprimir y contar los múltiplos de 3 desde la unidad hasta un número que introducimos por teclado
 
 suma = 0
 num = int(input("Introduce el número máximo al que llegaremos: "))
