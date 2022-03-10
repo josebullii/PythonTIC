@@ -1,26 +1,30 @@
-#Pedir los datos de nombre y telefono
+#Menú del programa principal
+def mostrarMenu():
 
-try:
-    fdatos = open("agenda.txt", encoding="utf_8")
-except:
-    fdatos = open("agenda.txt", "w")
-    fdatos.close
+    seleccion = 0
 
+    while (seleccion<1) or (seleccion>6):
+        print("1 - Añadir contacto")
+        print("2 - Editar contacto")
+        print("3 - Borrar contacto")
+        print("4 - Buscar contacto")
+        print("5 - Mostrar todos los contactos")
+        print("6 - Salir")
+        print("")
 
-sn = input("¿Quieres añadir un nuevo contacto? S/N: ")
-sn = sn.lower
+        try:
+            seleccion = int(input("Selecciona una opción: "))
+        except:
+            seleccion = 0
+            print("No es correcto")
 
-if sn != "s" or "n":
-    print("Valor no reconocido")
+        if (seleccion<1) or (seleccion>6):
+            print("")
+            print("Las opciones son 1, 2, 3, 4, 5 y 6")
+            print("")
 
-if sn == "s":
-    fdatos = open("agenda.txt", "a")
-    nombre = input("Introduce el nombre de la persona: ")
-    numero = int(input("Introduce su número de teléfono: "))
+    return seleccion
 
-    fdatos.write(nombre, "-", numero)
-    fdatos.close
-else:
-    fdatos.close
+mostrarMenu()
 
 
